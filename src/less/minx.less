@@ -1,0 +1,54 @@
+.flex(@content:'space-between', @align:'center') {
+  display: flex;
+  justify-content: @content ;
+  align-items: @align;
+}
+
+.boxShadow(){
+  box-shadow: 0 0 12px 0 #eee;
+}
+
+/* 定义公用margin */
+.margin1(@top: 24px) {
+  margin: @top;
+}
+.margin2(@top:0,@right:24px) {
+  margin: @top @right;
+}
+.margin3(@top:0, @right:24px, @bottom: 0) {
+  margin: @top @right @bottom;
+}
+
+/* pdding */
+.padding(@top: 24px) {
+  padding: @top;
+}
+.padding2(@top:0, @right:24px) {
+  padding: @top @right;
+}
+.padding3(@top:0, @right:24px, @bottom: 0) {
+  padding: @top @right @bottom;
+}
+/* 定义box-radius */
+.bR(@radius: 16px) {
+  border-radius: @radius;
+}
+.bR4(@top: 16px, @right: 16px, @bottom:  16px, @left: 16px) {
+  border-radius: @top @right @bottom @left;
+}
+/* 边框 */
+.border(@width: 1px, @color: @border-color, @style: solid) {
+  border: @width @color @style;
+}
+.border1(@width: 1px, @color: @border-color, @style: solid) {
+  border-top: @style @width @color;
+}
+.border2(@width: 1px, @color: @border-color, @style: solid) {
+  border-right: @style @width @color;
+}
+.border3(@width: 1px, @color: @border-color, @style: solid) {
+  border-bottom: @style @width @color;
+}
+.border4(@width: 1px, @color: @border-color, @style: solid) {
+  border-left: @style @width @color;
+}

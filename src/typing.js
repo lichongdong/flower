@@ -1,0 +1,4 @@
+export const INCREASE = 'INCREASE'
+export const DECREASE = 'DECREASE'
+// 更新购物车
+export const UPDATESHOPPINGCOUNT = 'UPDATESHOPPINGCOUNT'
